@@ -5,7 +5,7 @@ public class Main {
         miBilletera.mostrarSaldo();
 
         miBilletera.transferir(20.0);
-
+        
         miBilletera.mostrarSaldo();
     }
 }

@@ -1,17 +1,17 @@
 public class Billetera {
-    double balanceTotal; // CAMBIO que te toca a ti (antes era saldo)
+    double saldo;
     String titular;
 
-    public Billetera(String titular, double saldoinicial) {
+    public Billetera(String titular, double saldoInicial) {
         this.titular = titular;
-        this.balanceTotal = saldoinicial; // también aquí cambias saldo → balanceTotal
+        this.saldo = saldoInicial;
     }
 
     public void transferir(double monto) {
-        balanceTotal = balanceTotal - monto;
+        saldo = saldo - monto;
     }
 
     public void mostrarSaldo() {
-        System.out.println("Saldo de " + titular + ": $" + balanceTotal);
+        System.out.println("Saldo de " + titular + ": $" + saldo);
     }
 }
