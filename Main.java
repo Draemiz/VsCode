@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("BIENVENIDO AL SISTEMA BANCARIO");
+        
         Billetera miBilletera = new Billetera("Juan Perez", 100.0);
 
         miBilletera.mostrarSaldo();
