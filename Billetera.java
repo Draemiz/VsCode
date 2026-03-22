@@ -1,7 +1,7 @@
 public class Billetera {
     double balanceTotal;
     String titular;
-    String moneda = "USD";
+    String moneda ="USD";
     boolean cuentaActiva = true;
 
 
@@ -11,17 +11,18 @@ public class Billetera {
     }
 
     public void transferir(double monto) {
-        System.out.println("Iniciciando Transacción...");
 
-        if(monto>balanceTotal){
-            System.out.println("Fondos insuficientes");
-            return;
-        }
+    System.out.println("Iniciando transacción...");
 
-        balanceTotal = balanceTotal - (monto * 1.05);
-        System.out.println("Transferencia exitosa de: $" + monto);
-
+    if (monto > balanceTotal) {
+        System.out.println("Fondos insuficientes");
+        return;
     }
+
+    balanceTotal = balanceTotal - (monto * 1.05);
+
+    System.out.println("Transferencia exitosa de: $" + monto);
+}
 
     public void mostrarSaldo() {
         System.out.println("Saldo de " + titular + ": $" + balanceTotal);
